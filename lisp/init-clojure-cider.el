@@ -25,7 +25,8 @@
 
   ;; nrepl isn't based on comint
   (add-hook 'cider-repl-mode-hook
-            (lambda () (setq show-trailing-whitespace nil))))
+            (lambda () (setq show-trailing-whitespace nil)))
+  (setq cider-auto-select-error-buffer nil))
 
 
 (provide 'init-clojure-cider)
