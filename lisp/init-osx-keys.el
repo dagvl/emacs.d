@@ -14,6 +14,14 @@
   (after-load 'nxml-mode
     (define-key nxml-mode-map (kbd "M-h") nil))
   (global-set-key (kbd "M-ˍ") 'ns-do-hide-others) ;; what describe-key reports for cmd-option-h
+
+  ;; Norwegian mac-keyboard alt-keys
+  (define-key key-translation-map (kbd "s-8") (kbd "["))
+  (define-key key-translation-map (kbd "s-(") (kbd "{"))
+  (define-key key-translation-map (kbd "s-9") (kbd "]"))
+  (define-key key-translation-map (kbd "s-)") (kbd "}"))
+  (define-key key-translation-map (kbd "s-7") (kbd "|"))
+  (define-key key-translation-map (kbd "s-/") (kbd "\\"))
   )
 
 
