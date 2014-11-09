@@ -21,4 +21,16 @@
        (term-mode . emacs)))
   (evil-set-initial-state `,(car mode-map) `,(cdr mode-map)))
 
-;;; init-evil.el ends here
+;;; wrap-round-xyz
+(define-key evil-normal-state-map ",W" 'paredit-wrap-round)
+(define-key evil-normal-state-map ",w(" 'paredit-wrap-round)
+(define-key evil-normal-state-map ",w[" 'paredit-wrap-square)
+;;;(define-key evil-normal-state-map ",w{" 'paredit-wrap-curly)
+
+;;; slurping
+(define-key evil-normal-state-map ",." 'paredit-forward-slurp-sexp)
+(define-key evil-normal-state-map ",," 'paredit-forward-barf-sexp)
+(define-key evil-normal-state-map ",:" 'paredit-backward-slurp-sexp)
+(define-key evil-normal-state-map ",;" 'paredit-backward-barf-sexp)
+
+;; init-evil.el ends here
