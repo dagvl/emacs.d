@@ -101,6 +101,7 @@
 (require 'init-dash)
 (require 'init-ledger)
 (require 'init-evil)
+(require 'init-evil-paredit)
 
 ;; Extra packages which don't require any configuration
 
